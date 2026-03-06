@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Temas */
+:root {
+  --bg: #fff;
+  --texto: #111;
+  --borda: #c9c9c9;
+  --caixa: #e4e4e4;
+  --acao: rgb(212, 83, 83);
+}
+
+[data-tema="escuro"] {
+  --bg: #202020;
+  --texto: #fdfdfd;
+  --borda: #3b3b3b;
+  --caixa: #292929;
+  --acao: rgb(75, 50, 216);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  background-color: var(--bg);
+  color: var(--texto);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+.topo {
+  border-bottom: 1px solid var(--borda);
+}
+
+.topo .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  height: 70px;
+  align-items: center;
+}
+
+.topo .btn {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--texto);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+.topo .btn:hover {
+  background-color: #aaaaaa;
+}
+
+.caixa {
+  border: 1px solid var(--borda);
+  background-color: var(--caixa);
+  border: 0.5rem;
+  padding: 2rem 1rem;
+  width: 90%;
+  max-width: 700px;
+  margin: 3rem auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+.caix h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  background-color: var(--bg);
+  color: var(--texto);
+  font-size: 1rem;
+}
+
+form .btn {
+  width: 100%;
+  max-width: 220px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--borda);
+  background-color: var(--acao);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  max-width: 250px;
+}
+
+form .btn:hover {
+  opacity: 0.8;
+}
+
+.rodape {
+  border-top: 1px solid var(--borda);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5e5e5e;
+  margin-top: auto;
+}
